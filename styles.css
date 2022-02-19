@@ -22,6 +22,10 @@ body{
     --color-900: #312E81;
 }
 
+::selection{
+    background-color: var(--color-400);
+}
+
 ul{
     list-style: none;
     margin: 50px 25px;
@@ -180,6 +184,7 @@ a{
 .contContainer{
     background-color: var(--color-200);
     border-radius: 6px;
+    box-shadow: 0px 2px rgb(34, 0, 48);
 }
 
 .contText{
@@ -210,6 +215,7 @@ a{
     flex-direction: column;
     justify-content: space-between;
     padding: 15px 10px;
+    box-shadow: 0px 2px rgb(34, 0, 48);
 }
 
 .cardTitle{
@@ -221,6 +227,7 @@ a{
 .cardContent{
     overflow-y: auto;
     height: 150px;
+    font-size: 14px;
 }
 
 .cardBar{
@@ -235,11 +242,48 @@ a{
     cursor: pointer;
 }
 
-#announcements{
-    background-color: rgb(75, 24, 5);
+.ann.contContainer{
+    background-color: var(--color-100);
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    padding:10px 20px;
+
 }
+
+.announcement{
+    border-top: 1px solid var(--color-900);
+    border-bottom: 1px solid var(--color-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0px
+}
+
+.announcement:first-child{
+    border-top: 0px;
+}
+
+.announcement:last-child{
+    border-bottom: 0px;
+}
+
+.announcementTitle{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.announcementContent{
+    font-size: 13px;
+}
+
 
 #trending{
     background-color: rgb(26, 189, 39);
+}
+
+.tren.contContainer{
+    background-color: var(--color-100);
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
 }
 
