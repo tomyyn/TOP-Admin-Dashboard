@@ -1,0 +1,42 @@
+
+
+#container{
+    display:grid;
+    grid-template-rows: 40px 70px 1fr ;
+    grid-template-columns: 180px 1fr;
+}
+
+
+#sidebar{
+    background-color: aqua;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
+
+#header{
+    background-color: bisque;
+}
+
+#navBar{
+    background-color: brown;
+}
+
+#content{
+    background-color: coral;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#projects{
+    grid-row: 1 /span 2;
+}
+
+#announcements{
+
+}
+
+#trending{
+
+}
+
