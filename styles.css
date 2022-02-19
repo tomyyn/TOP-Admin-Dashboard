@@ -97,6 +97,7 @@ a{
     border-radius: 10px;
     border:none;
     height:25px;
+    padding: 0px 10px;
 }
 
 .headerRight{
@@ -141,6 +142,30 @@ a{
 
 .navBarLeft .profile{
     height: 80px;
+}
+
+.navBarRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    padding-right: 50px;
+}
+
+.navButton{
+    height: 40px;
+    width: 100px;
+    background-color: var(--color-600);
+    border:0px;
+    border-radius: 15px;
+    font-weight: 700;
+    color:var(--color-100);
+    cursor:pointer;
+}
+
+.navButton:active{
+    background-color: var(--color-100);
+    color:var(--color-600);
 }
 
 #content{
