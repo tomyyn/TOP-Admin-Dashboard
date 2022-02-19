@@ -169,21 +169,35 @@ a{
 }
 
 #content{
-    background-color: coral;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.7fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: var(--color-400);
+    padding:22px;
+    gap:20px;
+}
+
+.contContainer{
+    background-color: var(--color-200);
+    border-radius: 6px;
+}
+
+.contText{
+    font-size: 19px;
+    font-weight:600;
+    margin: 10px 0px;
 }
 
 #projects{
     grid-row: 1 / span 2;
+    background-color: coral;
 }
 
 #announcements{
-
+    background-color: rgb(75, 24, 5);
 }
 
 #trending{
-
+    background-color: rgb(26, 189, 39);
 }
 
