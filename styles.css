@@ -10,6 +10,7 @@ body{
 
 :root{
     font-family: "roboto",sans-serif;
+    color:rgb(34, 33, 33);
     --color-50: #EEF2FF;
     --color-100: #E0E7FF;
     --color-200: #C7D2FE;
@@ -277,13 +278,26 @@ a{
 }
 
 
-#trending{
-    background-color: rgb(26, 189, 39);
-}
-
-.tren.contContainer{
+.trends.contContainer{
     background-color: var(--color-100);
     display: grid;
     grid-template-rows: repeat(4,1fr);
+    padding:15px;
+    gap:20px;
 }
+
+.trend{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.trendAt{
+    font-weight: bold;
+}
+
+.trend .profile{
+    height: 50px;
+    width: 50px;
+} 
 
